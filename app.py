@@ -11,7 +11,7 @@ model = None
 
 def load_ml_model():
     global model
-    model_path = './model/pneumonia.h5'
+    model_path = './Model/pneumonia.h5'
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found at {model_path}")
     return load_model(model_path)

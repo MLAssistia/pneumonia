@@ -5,7 +5,7 @@ from keras.preprocessing import image
 import numpy as np
 
 app = Flask(__name__)
-model = load_model('./model/pneumonia.h5')
+model = load_model('./Model/pneumonia.h5')
 class_labels = ["Normal", "Pneumonia"]
 
 if not os.path.exists('uploads'):
